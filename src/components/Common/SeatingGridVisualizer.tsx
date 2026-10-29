@@ -13,58 +13,58 @@ interface SeatingGridVisualizerProps {
   isEditableLayout?: boolean;
 }
 
-// Distinct, high-contrast palette harmonized with the Cream & Dusty Rose theme
+// Distinct department shades stay within the shared champagne and brown palette.
 const DEPT_COLORS: Record<string, { bg: string; border: string; text: string; rollText: string; dot: string }> = {
   'Computer Science & Eng': {
-    bg: 'bg-[#FDF2F4] hover:bg-[#FCE7EB]',
-    border: 'border-[#E9BFC2]',
-    text: 'text-[#352A2B]',
-    rollText: 'text-[#A96873]',
-    dot: 'bg-[#C58F91]',
+    bg: 'bg-[#F7E1C7] hover:bg-[#F2D2AC]',
+    border: 'border-[#8B4513]',
+    text: 'text-[#352010]',
+    rollText: 'text-[#8B4513]',
+    dot: 'bg-[#8B4513]',
   },
   'Artificial Intelligence & DS': {
-    bg: 'bg-[#F5F3FF] hover:bg-[#EDE9FE]',
-    border: 'border-[#DDD6FE]',
-    text: 'text-[#352A2B]',
-    rollText: 'text-[#7C3AED]',
-    dot: 'bg-[#8B5CF6]',
+    bg: 'bg-[#FFF8EE] hover:bg-[#F7E1C7]',
+    border: 'border-[#A86127]',
+    text: 'text-[#352010]',
+    rollText: 'text-[#6F350F]',
+    dot: 'bg-[#A86127]',
   },
   'Electronics & Comm Eng': {
-    bg: 'bg-[#ECFDF5] hover:bg-[#D1FAE5]',
-    border: 'border-[#A7F3D0]',
-    text: 'text-[#352A2B]',
-    rollText: 'text-[#059669]',
-    dot: 'bg-[#10B981]',
+    bg: 'bg-[#F2D2AC] hover:bg-[#EBC397]',
+    border: 'border-[#6F350F]',
+    text: 'text-[#352010]',
+    rollText: 'text-[#6F350F]',
+    dot: 'bg-[#6F350F]',
   },
   'Mechanical Engineering': {
-    bg: 'bg-[#FFFBEB] hover:bg-[#FEF3C7]',
-    border: 'border-[#FDE68A]',
-    text: 'text-[#352A2B]',
-    rollText: 'text-[#D97706]',
-    dot: 'bg-[#F59E0B]',
+    bg: 'bg-[#F9E9D5] hover:bg-[#F2D2AC]',
+    border: 'border-[#B97438]',
+    text: 'text-[#352010]',
+    rollText: 'text-[#8B4513]',
+    dot: 'bg-[#B97438]',
   },
   'Information Technology': {
-    bg: 'bg-[#F0F9FF] hover:bg-[#E0F2FE]',
-    border: 'border-[#BAE6FD]',
-    text: 'text-[#352A2B]',
-    rollText: 'text-[#0284C7]',
-    dot: 'bg-[#0EA5E9]',
+    bg: 'bg-[#F4DABD] hover:bg-[#EBC397]',
+    border: 'border-[#8B4513]',
+    text: 'text-[#352010]',
+    rollText: 'text-[#6F350F]',
+    dot: 'bg-[#8B4513]',
   },
   'Civil Engineering': {
-    bg: 'bg-[#F1E5DC]/80 hover:bg-[#F1E5DC]',
-    border: 'border-[#E5D3D0]',
-    text: 'text-[#352A2B]',
-    rollText: 'text-[#76676A]',
-    dot: 'bg-[#99888A]',
+    bg: 'bg-[#FFF8EE] hover:bg-[#F7E1C7]',
+    border: 'border-[#D9B58D]',
+    text: 'text-[#352010]',
+    rollText: 'text-[#65401F]',
+    dot: 'bg-[#80664D]',
   },
 };
 
 const DEFAULT_COLOR = {
-  bg: 'bg-[#F6E0E2]/60 hover:bg-[#F6E0E2]',
-  border: 'border-[#E9BFC2]',
-  text: 'text-[#352A2B]',
-  rollText: 'text-[#A96873]',
-  dot: 'bg-[#C58F91]',
+  bg: 'bg-[#FFF8EE] hover:bg-[#F7E1C7]',
+  border: 'border-[#8B4513]',
+  text: 'text-[#352010]',
+  rollText: 'text-[#8B4513]',
+  dot: 'bg-[#8B4513]',
 };
 
 export const SeatingGridVisualizer: React.FC<SeatingGridVisualizerProps> = ({

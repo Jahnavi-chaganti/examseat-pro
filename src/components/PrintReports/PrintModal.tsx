@@ -91,7 +91,7 @@ export const PrintModal: React.FC<PrintModalProps> = ({
         </div>
 
         {/* Scrollable Printable Document Content */}
-        <div className="overflow-y-auto p-6 sm:p-8 flex-1 bg-[#F8F0E8]/50 print:bg-white print:p-0">
+        <div className="report-preview overflow-y-auto p-6 sm:p-8 flex-1 bg-[#F8F0E8]/50 print:bg-white print:p-0">
           {reportType === 'door_chart' && hall && exam && (
             <DoorChartReport
               hall={hall}
