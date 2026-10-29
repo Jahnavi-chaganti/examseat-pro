@@ -1,0 +1,6 @@
+{
+  "name": "ExamSeat Pro — Automated Examination Seating Allotment System",
+  "description": "Enterprise examination seating allotment system with mixed-seating anti-cheat algorithms, hall capacity planning, printable door charts, invigilator attendance sheets, and instant student roll number lookup.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
